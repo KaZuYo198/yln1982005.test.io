@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        
+                      <font size="-2">  <p>
+                            မနေ့က ကိစ္စ တွေ အတွက် သား  တောင်းပန်ပါတယ်tr အက်တာ တွေက သား ကြောင့်ဖစ်ရတာ ပါ tr။
+                            Trသား ကို မုန်းပြီး မချစ်​တော့တာ သားသိတယ် ။Tr ငိုရတာ လည်း သား​ကြောင့်ပါ ။ I hope u ......... will forgive me TwT
+                        </p></font>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
